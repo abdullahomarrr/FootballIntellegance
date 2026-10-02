@@ -1,0 +1,200 @@
+{
+  "collection_id": 4415000,
+  "title": "Soccer match event dataset",
+  "doi": "10.6084/m9.figshare.c.4415000.v5",
+  "checked_at": "2026-09-28T13:05:48.465081Z",
+  "articles": [
+    {
+      "article_id": 11743836,
+      "title": "Mapping of event identifiers to event names",
+      "doi": "10.6084/m9.figshare.11743836.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2020-01-28T14:23:20Z",
+      "files": [
+        {
+          "name": "eventid2name.csv",
+          "download_url": "https://ndownloader.figshare.com/files/21385245",
+          "size": 1001,
+          "computed_md5": "46daf16100ece0c743eedc9adcfea162"
+        }
+      ]
+    },
+    {
+      "article_id": 11743818,
+      "title": "Mapping of tag identifiers to tag names",
+      "doi": "10.6084/m9.figshare.11743818.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2020-01-28T14:20:18Z",
+      "files": [
+        {
+          "name": "tags2name.csv",
+          "download_url": "https://ndownloader.figshare.com/files/21385239",
+          "size": 1754,
+          "computed_md5": "e7acb14918d00e40c80a898b1da8fc39"
+        }
+      ]
+    },
+    {
+      "article_id": 11473374,
+      "title": "Data paper on soccer-logs",
+      "doi": "10.6084/m9.figshare.11473374.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-12-29T17:40:08Z",
+      "files": [
+        {
+          "name": "data_paper_soccer_nsd.pdf",
+          "download_url": "https://ndownloader.figshare.com/files/20479902",
+          "size": 4594739,
+          "computed_md5": "4a74eeeb83905b403eac44562bb4baa8"
+        }
+      ]
+    },
+    {
+      "article_id": 11473365,
+      "title": "Plots replication code of Nature Scientific Data paper",
+      "doi": "10.6084/m9.figshare.11473365.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-12-29T17:30:17Z",
+      "files": [
+        {
+          "name": "soccer_nsd_code.ipynb",
+          "download_url": "https://ndownloader.figshare.com/files/20479890",
+          "size": 874788,
+          "computed_md5": "c77ed66118995e023a7dc07c554a65c3"
+        }
+      ]
+    },
+    {
+      "article_id": 9361148,
+      "title": "PlayeRanks",
+      "doi": "10.6084/m9.figshare.9361148.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-08-08T08:53:20Z",
+      "files": [
+        {
+          "name": "playerank.json",
+          "download_url": "https://ndownloader.figshare.com/files/16972010",
+          "size": 6241757,
+          "computed_md5": "dbb3671e04eb37f30ef4006986748812"
+        }
+      ]
+    },
+    {
+      "article_id": 8082665,
+      "title": "Referees",
+      "doi": "10.6084/m9.figshare.8082665.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-05-06T14:20:05Z",
+      "files": [
+        {
+          "name": "referees.json",
+          "download_url": "https://ndownloader.figshare.com/files/15074030",
+          "size": 196709,
+          "computed_md5": "6b5b5612e128238f0f28a355cc13796a"
+        }
+      ]
+    },
+    {
+      "article_id": 8082650,
+      "title": "Coaches",
+      "doi": "10.6084/m9.figshare.8082650.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-05-06T14:14:40Z",
+      "files": [
+        {
+          "name": "coaches.json",
+          "download_url": "https://ndownloader.figshare.com/files/15073868",
+          "size": 70664,
+          "computed_md5": "ee8afad14b5be622b1d3560d15248778"
+        }
+      ]
+    },
+    {
+      "article_id": 7765196,
+      "title": "Players",
+      "doi": "10.6084/m9.figshare.7765196.v3",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-05-06T13:14:23Z",
+      "files": [
+        {
+          "name": "players.json",
+          "download_url": "https://ndownloader.figshare.com/files/15073721",
+          "size": 1737347,
+          "computed_md5": "f28ddf6326281efeda6488b2169f5609"
+        }
+      ]
+    },
+    {
+      "article_id": 7765310,
+      "title": "Teams",
+      "doi": "10.6084/m9.figshare.7765310.v3",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-05-06T13:08:43Z",
+      "files": [
+        {
+          "name": "teams.json",
+          "download_url": "https://ndownloader.figshare.com/files/15073697",
+          "size": 27404,
+          "computed_md5": "1381ff9449f21105090729cf0e086b5b"
+        }
+      ]
+    },
+    {
+      "article_id": 7765316,
+      "title": "Competitions",
+      "doi": "10.6084/m9.figshare.7765316.v4",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-05-06T13:02:17Z",
+      "files": [
+        {
+          "name": "competitions.json",
+          "download_url": "https://ndownloader.figshare.com/files/15073685",
+          "size": 1209,
+          "computed_md5": "3dc210a4805dda5337b0ff9f7eaa407a"
+        }
+      ]
+    },
+    {
+      "article_id": 7770599,
+      "title": "Events",
+      "doi": "10.6084/m9.figshare.7770599.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-02-26T12:27:22Z",
+      "files": [
+        {
+          "name": "events.zip",
+          "download_url": "https://ndownloader.figshare.com/files/14464685",
+          "size": 77323413,
+          "computed_md5": "7c20e8647e7eda58d7838a0c7b1ec6ab"
+        }
+      ]
+    },
+    {
+      "article_id": 7770422,
+      "title": "Matches",
+      "doi": "10.6084/m9.figshare.7770422.v1",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "published_at": "2019-02-26T12:15:54Z",
+      "files": [
+        {
+          "name": "matches.zip",
+          "download_url": "https://ndownloader.figshare.com/files/14464622",
+          "size": 645097,
+          "computed_md5": "51d80beb17480919f69a53a0152c2d71"
+        }
+      ]
+    }
+  ]
+}

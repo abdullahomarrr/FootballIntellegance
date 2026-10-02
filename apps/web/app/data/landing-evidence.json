@@ -1,0 +1,880 @@
+{
+  "captured_at": "2026-09-30T00:38:49.665Z",
+  "player": {
+    "data": {
+      "player_id": 2376,
+      "canonical_name": "Toni Kroos",
+      "normalized_name": "toni kroos",
+      "birth_date": "1990-01-04",
+      "nationality_codes": [
+        "DEU"
+      ],
+      "preferred_foot": "right",
+      "height_cm": 183,
+      "created_at": "2026-09-28T18:02:43.910396Z",
+      "updated_at": "2026-09-28T18:02:43.910396Z",
+      "provider_identities": [
+        {
+          "provider": "wyscout_open",
+          "verified": false,
+          "confidence": 1,
+          "provider_name": "Toni Kroos",
+          "provider_player_id": "14723"
+        }
+      ]
+    },
+    "meta": {
+      "generated_at": "2026-09-30T00:38:49.628588Z",
+      "data_as_of": "2026-09-28T18:02:43.910396Z",
+      "coverage_level": "CANONICAL_IDENTITY"
+    }
+  },
+  "seasons": {
+    "data": [
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "appearances": 27,
+        "starts": 26,
+        "minutes_played": 2268,
+        "goals": 5,
+        "assists": 7,
+        "shots": 40,
+        "shots_on_target": 17,
+        "passes": 1958,
+        "key_passes": 28,
+        "tackles": 17,
+        "interceptions": 58,
+        "goals_per_90": "0.19841269841269841270",
+        "assists_per_90": "0.27777777777777777778",
+        "shots_per_90": "1.5873015873015873",
+        "shots_on_target_per_90": "0.67460317460317460317",
+        "passes_per_90": "77.6984126984126984",
+        "key_passes_per_90": "1.1111111111111111",
+        "tackles_per_90": "0.67460317460317460317",
+        "interceptions_per_90": "2.3015873015873016",
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "sample_confidence": "STANDARD",
+        "season_label": "2017/18",
+        "season_status": "FINAL",
+        "competition_name": "Spanish first division",
+        "team_name": "Real Madrid"
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-09-30T00:38:49.629063Z",
+      "feature_set_version": "player_style_v1",
+      "count": 1,
+      "sample_size": 1,
+      "data_as_of": "2026-09-28T18:19:41.295179Z",
+      "season_statuses": [
+        "FINAL"
+      ]
+    }
+  },
+  "metrics": {
+    "data": [
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "assists_per_90",
+        "metric_value": "0.27777777777777777778",
+        "percentile": "94.57",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "goals_per_90",
+        "metric_value": "0.19841269841269841270",
+        "percentile": "86.82",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "interceptions_per_90",
+        "metric_value": "2.3015873015873016",
+        "percentile": "12.40",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "key_passes_per_90",
+        "metric_value": "1.1111111111111111",
+        "percentile": "98.45",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "passes_per_90",
+        "metric_value": "77.6984126984126984",
+        "percentile": "99.22",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "shots_on_target_per_90",
+        "metric_value": "0.67460317460317460317",
+        "percentile": "84.50",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "shots_per_90",
+        "metric_value": "1.5873015873015873",
+        "percentile": "79.84",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      },
+      {
+        "player_id": 2376,
+        "team_id": 111,
+        "competition_id": 6,
+        "season_id": 1,
+        "metric_name": "tackles_per_90",
+        "metric_value": "0.67460317460317460317",
+        "percentile": "60.47",
+        "comparison_population": "competition_season_position_min_900",
+        "feature_set_version": "player_style_v2",
+        "data_as_of": "2026-09-28T18:19:41.295179Z"
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-09-30T00:38:49.625767Z",
+      "feature_set_version": "player_style_v1",
+      "count": 8,
+      "sample_size": 8,
+      "data_as_of": "2026-09-28T18:19:41.295179Z"
+    }
+  },
+  "similar": {
+    "data": [
+      {
+        "player_id": 2100,
+        "name": "Sergio Canales Madrazo",
+        "team_id": 100,
+        "team_name": "Real Sociedad",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1923,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -5.42,
+            "target_percentile": 86.82,
+            "candidate_percentile": 81.4
+          },
+          "shots_per_90": {
+            "difference": 18.61,
+            "target_percentile": 79.84,
+            "candidate_percentile": 98.45
+          },
+          "passes_per_90": {
+            "difference": -25.58,
+            "target_percentile": 99.22,
+            "candidate_percentile": 73.64
+          },
+          "assists_per_90": {
+            "difference": -10.85,
+            "target_percentile": 94.57,
+            "candidate_percentile": 83.72
+          },
+          "tackles_per_90": {
+            "difference": 10.85,
+            "target_percentile": 60.47,
+            "candidate_percentile": 71.32
+          },
+          "key_passes_per_90": {
+            "difference": -0.78,
+            "target_percentile": 98.45,
+            "candidate_percentile": 97.67
+          },
+          "interceptions_per_90": {
+            "difference": 1.55,
+            "target_percentile": 12.4,
+            "candidate_percentile": 13.95
+          },
+          "shots_on_target_per_90": {
+            "difference": 4.65,
+            "target_percentile": 84.5,
+            "candidate_percentile": 89.15
+          }
+        },
+        "similarity_score": "97.17",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 5021,
+        "name": "Philippe Coutinho Correia",
+        "team_id": 110,
+        "team_name": "Barcelona",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1152,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T19:29:21.864111Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": 7.75,
+            "target_percentile": 86.82,
+            "candidate_percentile": 94.57
+          },
+          "shots_per_90": {
+            "difference": 13.18,
+            "target_percentile": 79.84,
+            "candidate_percentile": 93.02
+          },
+          "passes_per_90": {
+            "difference": -17.05,
+            "target_percentile": 99.22,
+            "candidate_percentile": 82.17
+          },
+          "assists_per_90": {
+            "difference": 5.43,
+            "target_percentile": 94.57,
+            "candidate_percentile": 100
+          },
+          "tackles_per_90": {
+            "difference": 33.33,
+            "target_percentile": 60.47,
+            "candidate_percentile": 93.8
+          },
+          "key_passes_per_90": {
+            "difference": 1.55,
+            "target_percentile": 98.45,
+            "candidate_percentile": 100
+          },
+          "interceptions_per_90": {
+            "difference": -12.4,
+            "target_percentile": 12.4,
+            "candidate_percentile": 0
+          },
+          "shots_on_target_per_90": {
+            "difference": 13.95,
+            "target_percentile": 84.5,
+            "candidate_percentile": 98.45
+          }
+        },
+        "similarity_score": "97.16",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2165,
+        "name": "Francisco Román Alarcón Suárez",
+        "team_id": 111,
+        "team_name": "Real Madrid",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1775,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": 10.08,
+            "target_percentile": 86.82,
+            "candidate_percentile": 96.9
+          },
+          "shots_per_90": {
+            "difference": 14.73,
+            "target_percentile": 79.84,
+            "candidate_percentile": 94.57
+          },
+          "passes_per_90": {
+            "difference": -0.77,
+            "target_percentile": 99.22,
+            "candidate_percentile": 98.45
+          },
+          "assists_per_90": {
+            "difference": 3.1,
+            "target_percentile": 94.57,
+            "candidate_percentile": 97.67
+          },
+          "tackles_per_90": {
+            "difference": -47.29,
+            "target_percentile": 60.47,
+            "candidate_percentile": 13.18
+          },
+          "key_passes_per_90": {
+            "difference": 0.77,
+            "target_percentile": 98.45,
+            "candidate_percentile": 99.22
+          },
+          "interceptions_per_90": {
+            "difference": -9.3,
+            "target_percentile": 12.4,
+            "candidate_percentile": 3.1
+          },
+          "shots_on_target_per_90": {
+            "difference": 9.3,
+            "target_percentile": 84.5,
+            "candidate_percentile": 93.8
+          }
+        },
+        "similarity_score": "95.89",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2498,
+        "name": "Ryad Boudebouz",
+        "team_id": 109,
+        "team_name": "Real Betis",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1361,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -17.83,
+            "target_percentile": 86.82,
+            "candidate_percentile": 68.99
+          },
+          "shots_per_90": {
+            "difference": -31.78,
+            "target_percentile": 79.84,
+            "candidate_percentile": 48.06
+          },
+          "passes_per_90": {
+            "difference": -26.35,
+            "target_percentile": 99.22,
+            "candidate_percentile": 72.87
+          },
+          "assists_per_90": {
+            "difference": -9.3,
+            "target_percentile": 94.57,
+            "candidate_percentile": 85.27
+          },
+          "tackles_per_90": {
+            "difference": -6.21,
+            "target_percentile": 60.47,
+            "candidate_percentile": 54.26
+          },
+          "key_passes_per_90": {
+            "difference": -24.81,
+            "target_percentile": 98.45,
+            "candidate_percentile": 73.64
+          },
+          "interceptions_per_90": {
+            "difference": 24.81,
+            "target_percentile": 12.4,
+            "candidate_percentile": 37.21
+          },
+          "shots_on_target_per_90": {
+            "difference": 1.55,
+            "target_percentile": 84.5,
+            "candidate_percentile": 86.05
+          }
+        },
+        "similarity_score": "94.73",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2483,
+        "name": "Marco Asensio Willemsen",
+        "team_id": 111,
+        "team_name": "Real Madrid",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1839,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": 6.98,
+            "target_percentile": 86.82,
+            "candidate_percentile": 93.8
+          },
+          "shots_per_90": {
+            "difference": 17.06,
+            "target_percentile": 79.84,
+            "candidate_percentile": 96.9
+          },
+          "passes_per_90": {
+            "difference": -20.15,
+            "target_percentile": 99.22,
+            "candidate_percentile": 79.07
+          },
+          "assists_per_90": {
+            "difference": 2.33,
+            "target_percentile": 94.57,
+            "candidate_percentile": 96.9
+          },
+          "tackles_per_90": {
+            "difference": -51.94,
+            "target_percentile": 60.47,
+            "candidate_percentile": 8.53
+          },
+          "key_passes_per_90": {
+            "difference": -7.75,
+            "target_percentile": 98.45,
+            "candidate_percentile": 90.7
+          },
+          "interceptions_per_90": {
+            "difference": -6.2,
+            "target_percentile": 12.4,
+            "candidate_percentile": 6.2
+          },
+          "shots_on_target_per_90": {
+            "difference": 11.62,
+            "target_percentile": 84.5,
+            "candidate_percentile": 96.12
+          }
+        },
+        "similarity_score": "93.26",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2457,
+        "name": "Franco Damián Vázquez",
+        "team_id": 106,
+        "team_name": "Sevilla",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1844,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -2.32,
+            "target_percentile": 86.82,
+            "candidate_percentile": 84.5
+          },
+          "shots_per_90": {
+            "difference": 17.83,
+            "target_percentile": 79.84,
+            "candidate_percentile": 97.67
+          },
+          "passes_per_90": {
+            "difference": -52.71,
+            "target_percentile": 99.22,
+            "candidate_percentile": 46.51
+          },
+          "assists_per_90": {
+            "difference": -2.32,
+            "target_percentile": 94.57,
+            "candidate_percentile": 92.25
+          },
+          "tackles_per_90": {
+            "difference": 9.3,
+            "target_percentile": 60.47,
+            "candidate_percentile": 69.77
+          },
+          "key_passes_per_90": {
+            "difference": -25.58,
+            "target_percentile": 98.45,
+            "candidate_percentile": 72.87
+          },
+          "interceptions_per_90": {
+            "difference": -0.77,
+            "target_percentile": 12.4,
+            "candidate_percentile": 11.63
+          },
+          "shots_on_target_per_90": {
+            "difference": 2.32,
+            "target_percentile": 84.5,
+            "candidate_percentile": 86.82
+          }
+        },
+        "similarity_score": "91.05",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2350,
+        "name": "Luka Modrić",
+        "team_id": 111,
+        "team_name": "Real Madrid",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1975,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -49.61,
+            "target_percentile": 86.82,
+            "candidate_percentile": 37.21
+          },
+          "shots_per_90": {
+            "difference": 2.33,
+            "target_percentile": 79.84,
+            "candidate_percentile": 82.17
+          },
+          "passes_per_90": {
+            "difference": -7.75,
+            "target_percentile": 99.22,
+            "candidate_percentile": 91.47
+          },
+          "assists_per_90": {
+            "difference": -13.17,
+            "target_percentile": 94.57,
+            "candidate_percentile": 81.4
+          },
+          "tackles_per_90": {
+            "difference": 4.65,
+            "target_percentile": 60.47,
+            "candidate_percentile": 65.12
+          },
+          "key_passes_per_90": {
+            "difference": -30.23,
+            "target_percentile": 98.45,
+            "candidate_percentile": 68.22
+          },
+          "interceptions_per_90": {
+            "difference": 19.38,
+            "target_percentile": 12.4,
+            "candidate_percentile": 31.78
+          },
+          "shots_on_target_per_90": {
+            "difference": -17.83,
+            "target_percentile": 84.5,
+            "candidate_percentile": 66.67
+          }
+        },
+        "similarity_score": "90.40",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2321,
+        "name": "Pablo Fornals Malla",
+        "team_id": 98,
+        "team_name": "Villarreal",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 2622,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -26.35,
+            "target_percentile": 86.82,
+            "candidate_percentile": 60.47
+          },
+          "shots_per_90": {
+            "difference": 3.11,
+            "target_percentile": 79.84,
+            "candidate_percentile": 82.95
+          },
+          "passes_per_90": {
+            "difference": -40.31,
+            "target_percentile": 99.22,
+            "candidate_percentile": 58.91
+          },
+          "assists_per_90": {
+            "difference": 3.88,
+            "target_percentile": 94.57,
+            "candidate_percentile": 98.45
+          },
+          "tackles_per_90": {
+            "difference": -19.38,
+            "target_percentile": 60.47,
+            "candidate_percentile": 41.09
+          },
+          "key_passes_per_90": {
+            "difference": -38.76,
+            "target_percentile": 98.45,
+            "candidate_percentile": 59.69
+          },
+          "interceptions_per_90": {
+            "difference": 9.31,
+            "target_percentile": 12.4,
+            "candidate_percentile": 21.71
+          },
+          "shots_on_target_per_90": {
+            "difference": -10.86,
+            "target_percentile": 84.5,
+            "candidate_percentile": 73.64
+          }
+        },
+        "similarity_score": "90.03",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2126,
+        "name": "José Andrés Guardado Hernández",
+        "team_id": 109,
+        "team_name": "Real Betis",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 2264,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -34.11,
+            "target_percentile": 86.82,
+            "candidate_percentile": 52.71
+          },
+          "shots_per_90": {
+            "difference": -25.58,
+            "target_percentile": 79.84,
+            "candidate_percentile": 54.26
+          },
+          "passes_per_90": {
+            "difference": -20.93,
+            "target_percentile": 99.22,
+            "candidate_percentile": 78.29
+          },
+          "assists_per_90": {
+            "difference": -3.87,
+            "target_percentile": 94.57,
+            "candidate_percentile": 90.7
+          },
+          "tackles_per_90": {
+            "difference": 2.32,
+            "target_percentile": 60.47,
+            "candidate_percentile": 62.79
+          },
+          "key_passes_per_90": {
+            "difference": -14.73,
+            "target_percentile": 98.45,
+            "candidate_percentile": 83.72
+          },
+          "interceptions_per_90": {
+            "difference": 27.91,
+            "target_percentile": 12.4,
+            "candidate_percentile": 40.31
+          },
+          "shots_on_target_per_90": {
+            "difference": -39.54,
+            "target_percentile": 84.5,
+            "candidate_percentile": 44.96
+          }
+        },
+        "similarity_score": "89.87",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      },
+      {
+        "player_id": 2551,
+        "name": "Emre Çolak",
+        "team_id": 112,
+        "team_name": "Deportivo La Coru\\u00f1a",
+        "competition_id": 6,
+        "season_id": 1,
+        "position_group": "MD",
+        "minutes_played": 1455,
+        "compared_feature_count": 8,
+        "data_as_of": "2026-09-28T18:19:41.295179Z",
+        "compared_features": [
+          "assists_per_90",
+          "goals_per_90",
+          "interceptions_per_90",
+          "key_passes_per_90",
+          "passes_per_90",
+          "shots_on_target_per_90",
+          "shots_per_90",
+          "tackles_per_90"
+        ],
+        "feature_differences": {
+          "goals_per_90": {
+            "difference": -39.53,
+            "target_percentile": 86.82,
+            "candidate_percentile": 47.29
+          },
+          "shots_per_90": {
+            "difference": -24.03,
+            "target_percentile": 79.84,
+            "candidate_percentile": 55.81
+          },
+          "passes_per_90": {
+            "difference": -33.33,
+            "target_percentile": 99.22,
+            "candidate_percentile": 65.89
+          },
+          "assists_per_90": {
+            "difference": -29.45,
+            "target_percentile": 94.57,
+            "candidate_percentile": 65.12
+          },
+          "tackles_per_90": {
+            "difference": -17.06,
+            "target_percentile": 60.47,
+            "candidate_percentile": 43.41
+          },
+          "key_passes_per_90": {
+            "difference": -6.2,
+            "target_percentile": 98.45,
+            "candidate_percentile": 92.25
+          },
+          "interceptions_per_90": {
+            "difference": -10.85,
+            "target_percentile": 12.4,
+            "candidate_percentile": 1.55
+          },
+          "shots_on_target_per_90": {
+            "difference": -9.31,
+            "target_percentile": 84.5,
+            "candidate_percentile": 75.19
+          }
+        },
+        "similarity_score": "89.21",
+        "confidence": "HIGH",
+        "comparison_population": "competition_season_position_min_900",
+        "model_version": "role_weighted_similarity_v2"
+      }
+    ],
+    "meta": {
+      "generated_at": "2026-09-30T00:38:49.662416Z",
+      "model_version": "role_weighted_similarity_v2",
+      "feature_set_version": "player_style_v2",
+      "comparison_population": "competition_season_position_min_900",
+      "minimum_minutes": 900,
+      "sample_size": 10,
+      "data_as_of": "2026-09-28T19:29:21.864111Z",
+      "status": "AVAILABLE",
+      "message": "Peers use the target's latest qualified competition-season and broad provider position group. No row is returned below 900 minutes."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "country": "Germany",
+  "events_loaded": 519405,
+  "events_quarantined": 2,
+  "events_read": 519407,
+  "existing_identities": 11,
+  "identities_auto_linked": 0,
+  "identities_seeded": 462,
+  "identity_review_candidates": 0,
+  "matches_loaded": 306,
+  "provider_players_seen": 473,
+  "quarantine_reasons": {
+    "NORMALIZATION_ERROR_VALUEERROR": 2
+  },
+  "source_archive_sha256": "877e015b716ffdeea18f04418e3f24fed307ed03c37ff305cabe1f47c4822a45"
+}

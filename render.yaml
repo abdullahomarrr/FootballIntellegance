@@ -1,0 +1,30 @@
+# Render Blueprint for the API (free plan). The web app is deployed separately on Vercel.
+services:
+  - type: web
+    name: football-intelligence-api
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile.api
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      # Neon connection string; set in the Render dashboard, never committed.
+      - key: DATABASE_URL
+        sync: false
+      # Hosted DB ships without fact_event, so serve precomputed heatmaps and maps.
+      - key: SPATIAL_SNAPSHOT
+        value: "1"
+      # Comma-separated web origins allowed to call the API, e.g. https://your-app.vercel.app
+      - key: ALLOWED_ORIGINS
+        sync: false
+      # Lets Vercel preview deployments call the API too.
+      - key: ALLOWED_ORIGIN_REGEX
+        value: "^https://.*\\.vercel\\.app$"
+      # Optional: news research summaries. Leave unset to skip them.
+      - key: RESEARCH_LLM_BASE_URL
+        sync: false
+      - key: RESEARCH_LLM_MODEL
+        sync: false
+      - key: RESEARCH_LLM_API_KEY
+        sync: false

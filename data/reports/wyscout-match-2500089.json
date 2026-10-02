@@ -1,0 +1,26 @@
+{
+  "provider": "wyscout_open",
+  "match_id": 2500089,
+  "country": "England",
+  "pipeline_run_id": "cfe39efa-a3b5-40d3-ac6e-d3804d80d74e",
+  "source_archive_sha256": "877e015b716ffdeea18f04418e3f24fed307ed03c37ff305cabe1f47c4822a45",
+  "raw_object_uri": "provider=wyscout_open/endpoint=events_archive_match/ingestion_date=2026-09-28/sha256=73d13ffd62d2a09d6f1ed97eb780d5ac2ac7d944a0f817e38e03e97615325da7.json",
+  "raw_checksum_sha256": "73d13ffd62d2a09d6f1ed97eb780d5ac2ac7d944a0f817e38e03e97615325da7",
+  "raw_event_count": 1572,
+  "canonical_event_count": 1572,
+  "quarantined_event_count": 0,
+  "event_type_counts": {
+    "Duel": 412,
+    "Foul": 23,
+    "Free Kick": 102,
+    "Goalkeeper leaving line": 6,
+    "Interruption": 75,
+    "Offside": 4,
+    "Others on the ball": 118,
+    "Pass": 800,
+    "Save attempt": 9,
+    "Shot": 23
+  },
+  "generated_at": "2026-09-28T13:09:45.079780Z",
+  "canonical_object_uri": "data/canonical/events/wyscout_match_2500089.jsonl"
+}

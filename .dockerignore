@@ -1,0 +1,10 @@
+.git
+.venv
+data/raw
+data/canonical
+data/reports
+target
+logs
+apps/web/node_modules
+apps/web/.next
+tests

@@ -1,0 +1,34 @@
+.toggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+.toggle > span:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.toggle b {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.title {
+  margin: 28px 0 6px;
+  scroll-margin-top: 24px;
+}
+
+.anchor {
+  scroll-margin-top: 24px;
+}

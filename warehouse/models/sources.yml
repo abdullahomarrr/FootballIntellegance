@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: canonical
+    schema: public
+    tables:
+      - name: fact_player_match
+      - name: fact_event
+      - name: dim_match
+      - name: dim_player
+      - name: dim_competition
+      - name: dim_season
+

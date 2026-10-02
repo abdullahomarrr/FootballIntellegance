@@ -1,0 +1,13 @@
+[
+  {
+    "override_id": "example-provider-player-link-v1",
+    "version": 1,
+    "action": "LINK_PROVIDER_PLAYER",
+    "provider": "example_provider",
+    "provider_player_id": "12345",
+    "canonical_player_id": 1,
+    "reason": "Reviewed against date of birth and official club registration.",
+    "approved_by": "reviewer@example.invalid",
+    "approved_at": "2026-09-28T12:00:00Z"
+  }
+]

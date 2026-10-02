@@ -1,0 +1,353 @@
+[
+  {
+    "competition": {
+      "competition_id": 9,
+      "season_id": 281,
+      "country_name": "Germany",
+      "competition_name": "1. Bundesliga",
+      "season_name": "2023/2024",
+      "match_updated": "2024-09-28T20:46:38.893391",
+      "match_available_360": "2025-11-15T23:17:41.827093"
+    },
+    "match_count": 34,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 9,
+      "season_id": 27,
+      "country_name": "Germany",
+      "competition_name": "1. Bundesliga",
+      "season_name": "2015/2016",
+      "match_updated": "2024-05-19T11:11:14.192381",
+      "match_available_360": null
+    },
+    "match_count": 34,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 90,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2020/2021",
+      "match_updated": "2025-11-02T03:55:19.577958",
+      "match_available_360": "2025-11-02T03:55:53.923193"
+    },
+    "match_count": 35,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 42,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2019/2020",
+      "match_updated": "2024-12-16T16:51:06.833054",
+      "match_available_360": null
+    },
+    "match_count": 33,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 4,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2018/2019",
+      "match_updated": "2026-04-06T04:49:09.959011",
+      "match_available_360": null
+    },
+    "match_count": 34,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 1,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2017/2018",
+      "match_updated": "2025-07-14T10:01:16.674864",
+      "match_available_360": null
+    },
+    "match_count": 36,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 2,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2016/2017",
+      "match_updated": "2025-03-09T16:03:54.962718",
+      "match_available_360": null
+    },
+    "match_count": 34,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 27,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2015/2016",
+      "match_updated": "2025-04-23T13:59:22.835792",
+      "match_available_360": null
+    },
+    "match_count": 380,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 26,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2014/2015",
+      "match_updated": "2025-06-24T13:39:01.068680",
+      "match_available_360": null
+    },
+    "match_count": 38,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 25,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2013/2014",
+      "match_updated": "2025-06-24T09:52:44.048585",
+      "match_available_360": null
+    },
+    "match_count": 31,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 24,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2012/2013",
+      "match_updated": "2025-06-24T13:53:14.047130",
+      "match_available_360": null
+    },
+    "match_count": 32,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 23,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2011/2012",
+      "match_updated": "2025-06-24T13:38:10.764259",
+      "match_available_360": null
+    },
+    "match_count": 37,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 22,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2010/2011",
+      "match_updated": "2025-06-24T13:51:54.910296",
+      "match_available_360": null
+    },
+    "match_count": 33,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 21,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2009/2010",
+      "match_updated": "2025-06-24T13:43:36.379754",
+      "match_available_360": null
+    },
+    "match_count": 35,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 41,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2008/2009",
+      "match_updated": "2025-09-08T13:42:24.627088",
+      "match_available_360": null
+    },
+    "match_count": 31,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 40,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2007/2008",
+      "match_updated": "2026-05-26T13:35:19.781918",
+      "match_available_360": null
+    },
+    "match_count": 27,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 39,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2006/2007",
+      "match_updated": "2025-06-24T13:52:50.824119",
+      "match_available_360": null
+    },
+    "match_count": 26,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 38,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2005/2006",
+      "match_updated": "2025-06-24T14:05:07.849675",
+      "match_available_360": null
+    },
+    "match_count": 17,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 37,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "2004/2005",
+      "match_updated": "2025-06-24T13:48:43.998096",
+      "match_available_360": null
+    },
+    "match_count": 7,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 11,
+      "season_id": 278,
+      "country_name": "Spain",
+      "competition_name": "La Liga",
+      "season_name": "1973/1974",
+      "match_updated": "2023-07-06T12:50:48.807820",
+      "match_available_360": null
+    },
+    "match_count": 1,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 7,
+      "season_id": 235,
+      "country_name": "France",
+      "competition_name": "Ligue 1",
+      "season_name": "2022/2023",
+      "match_updated": "2026-04-06T18:51:07.770289",
+      "match_available_360": "2026-04-06T18:59:05.942748"
+    },
+    "match_count": 32,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 7,
+      "season_id": 108,
+      "country_name": "France",
+      "competition_name": "Ligue 1",
+      "season_name": "2021/2022",
+      "match_updated": "2026-04-25T22:22:46.370056",
+      "match_available_360": "2026-04-25T22:24:04.840827"
+    },
+    "match_count": 26,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 7,
+      "season_id": 27,
+      "country_name": "France",
+      "competition_name": "Ligue 1",
+      "season_name": "2015/2016",
+      "match_updated": "2026-05-12T22:46:54.722768",
+      "match_available_360": null
+    },
+    "match_count": 377,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 2,
+      "season_id": 27,
+      "country_name": "England",
+      "competition_name": "Premier League",
+      "season_name": "2015/2016",
+      "match_updated": "2025-12-17T14:38:00.447595",
+      "match_available_360": null
+    },
+    "match_count": 380,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 2,
+      "season_id": 44,
+      "country_name": "England",
+      "competition_name": "Premier League",
+      "season_name": "2003/2004",
+      "match_updated": "2025-06-24T13:53:07.585114",
+      "match_available_360": null
+    },
+    "match_count": 38,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 12,
+      "season_id": 27,
+      "country_name": "Italy",
+      "competition_name": "Serie A",
+      "season_name": "2015/2016",
+      "match_updated": "2025-08-15T14:28:50.169562",
+      "match_available_360": null
+    },
+    "match_count": 380,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  },
+  {
+    "competition": {
+      "competition_id": 12,
+      "season_id": 86,
+      "country_name": "Italy",
+      "competition_name": "Serie A",
+      "season_name": "1986/1987",
+      "match_updated": "2025-11-23T11:00:00.442491",
+      "match_available_360": null
+    },
+    "match_count": 1,
+    "checked_at": "2026-09-28T01:44:07.941477Z"
+  }
+]

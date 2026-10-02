@@ -1,0 +1,14 @@
+{
+  "country": "Spain",
+  "events_loaded": 628659,
+  "events_quarantined": 0,
+  "events_read": 628659,
+  "existing_identities": 23,
+  "identities_auto_linked": 0,
+  "identities_seeded": 534,
+  "identity_review_candidates": 3,
+  "matches_loaded": 380,
+  "provider_players_seen": 557,
+  "quarantine_reasons": {},
+  "source_archive_sha256": "877e015b716ffdeea18f04418e3f24fed307ed03c37ff305cabe1f47c4822a45"
+}

@@ -1,0 +1,13 @@
+{
+  "country": "England",
+  "events_loaded": 643150,
+  "events_quarantined": 0,
+  "events_read": 643150,
+  "existing_identities": 28,
+  "identities_auto_linked": 0,
+  "identities_seeded": 486,
+  "identity_review_candidates": 21,
+  "matches_loaded": 380,
+  "provider_players_seen": 514,
+  "source_archive_sha256": "877e015b716ffdeea18f04418e3f24fed307ed03c37ff305cabe1f47c4822a45"
+}

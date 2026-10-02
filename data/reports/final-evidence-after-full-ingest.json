@@ -1,0 +1,35 @@
+{
+  "current_season": {
+    "label": "2026/27",
+    "latest_data_as_of": null,
+    "matches": 0,
+    "updating": false
+  },
+  "database": {
+    "active_provider_identity_bridges": 8389,
+    "canonical_players": 8389,
+    "earliest_season": "1973/74",
+    "event_participant_identities": 7549,
+    "event_participant_resolution_percent": 100.0,
+    "events": 10846880,
+    "leagues_populated": 5,
+    "market_values": 0,
+    "matches": 3995,
+    "news_articles": 0,
+    "player_season_profiles": 12219,
+    "qualified_player_season_profiles": 3287,
+    "resolved_event_participant_identities": 7549,
+    "seasons_populated": 23,
+    "social_aggregates": 0,
+    "spatial_player_seasons": 12031,
+    "transfers": 0
+  },
+  "definitions": {
+    "identity_resolution_denominator": "distinct (provider, provider_player_id) pairs present in fact_event",
+    "league": "distinct competition_id represented in dim_match",
+    "qualified_profile": "mart_player_season_profile row with at least 900 minutes",
+    "season": "distinct season_id represented in dim_match",
+    "spatial_player_season": "distinct canonical player, competition and season with at least one event having both normalized coordinates"
+  },
+  "generated_at": "2026-09-29T17:00:35.079259+00:00"
+}

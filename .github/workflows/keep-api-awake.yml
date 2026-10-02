@@ -1,0 +1,18 @@
+# Pings the free Render API so it rarely falls asleep. Set the repository variable
+# API_HEALTH_URL (Settings → Secrets and variables → Actions → Variables) to the API's
+# /health URL. Does nothing until that variable exists.
+name: Keep API awake
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    if: ${{ vars.API_HEALTH_URL != '' }}
+    steps:
+      - name: Ping health endpoint
+        run: curl --fail --silent --show-error --max-time 90 --retry 2 "${{ vars.API_HEALTH_URL }}"

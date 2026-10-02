@@ -1,0 +1,13 @@
+{
+  "country": "France",
+  "events_loaded": 632807,
+  "events_quarantined": 0,
+  "events_read": 632807,
+  "existing_identities": 5,
+  "identities_auto_linked": 0,
+  "identities_seeded": 536,
+  "identity_review_candidates": 2,
+  "matches_loaded": 380,
+  "provider_players_seen": 541,
+  "source_archive_sha256": "877e015b716ffdeea18f04418e3f24fed307ed03c37ff305cabe1f47c4822a45"
+}

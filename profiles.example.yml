@@ -1,0 +1,13 @@
+football_intelligence:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: football
+      password: football-local-only
+      dbname: football_intelligence
+      schema: analytics
+      threads: 4
+

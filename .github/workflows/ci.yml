@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync --all-groups
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      - run: uv run pytest
+  warehouse:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: football_intelligence
+          POSTGRES_USER: football
+          POSTGRES_PASSWORD: football-local-only
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U football -d football_intelligence"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --all-groups
+      - name: Apply migrations
+        env:
+          PGPASSWORD: football-local-only
+        run: for file in sql/migrations/*.sql; do psql -h localhost -U football -d football_intelligence -v ON_ERROR_STOP=1 -f "$file"; done
+      - name: Reapply migrations to prove upgrade idempotency
+        env:
+          PGPASSWORD: football-local-only
+        run: for file in sql/migrations/*.sql; do psql -h localhost -U football -d football_intelligence -v ON_ERROR_STOP=1 -f "$file"; done
+      - run: uv run dbt build --profiles-dir .
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - run: npm audit --audit-level=high
+      - run: npm run typecheck
+      - run: npm run build
+  containers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose config --quiet
+      - run: docker build -f Dockerfile.api -t football-intelligence-api:test .
+      - run: docker build -t football-intelligence-web:test apps/web
+

@@ -1,0 +1,278 @@
+{
+  "provider_player_id": "3621",
+  "match_id": "3754217",
+  "event_count": 273,
+  "located_event_count": 273,
+  "mean_x_m": 74.912,
+  "mean_y_m": 21.263,
+  "event_type_counts": {
+    "Ball Receipt*": 76,
+    "Ball Recovery": 8,
+    "Block": 1,
+    "Carry": 81,
+    "Dispossessed": 2,
+    "Dribble": 9,
+    "Duel": 1,
+    "Foul Committed": 1,
+    "Foul Won": 4,
+    "Interception": 2,
+    "Miscontrol": 1,
+    "Pass": 74,
+    "Pressure": 9,
+    "Shot": 4
+  },
+  "heatmap": [
+    {
+      "x_bin": 3,
+      "y_bin": 0,
+      "events": 2
+    },
+    {
+      "x_bin": 3,
+      "y_bin": 2,
+      "events": 2
+    },
+    {
+      "x_bin": 3,
+      "y_bin": 7,
+      "events": 2
+    },
+    {
+      "x_bin": 4,
+      "y_bin": 0,
+      "events": 6
+    },
+    {
+      "x_bin": 4,
+      "y_bin": 5,
+      "events": 1
+    },
+    {
+      "x_bin": 4,
+      "y_bin": 7,
+      "events": 3
+    },
+    {
+      "x_bin": 5,
+      "y_bin": 0,
+      "events": 5
+    },
+    {
+      "x_bin": 5,
+      "y_bin": 1,
+      "events": 5
+    },
+    {
+      "x_bin": 5,
+      "y_bin": 3,
+      "events": 5
+    },
+    {
+      "x_bin": 5,
+      "y_bin": 5,
+      "events": 1
+    },
+    {
+      "x_bin": 6,
+      "y_bin": 0,
+      "events": 5
+    },
+    {
+      "x_bin": 6,
+      "y_bin": 2,
+      "events": 4
+    },
+    {
+      "x_bin": 6,
+      "y_bin": 3,
+      "events": 3
+    },
+    {
+      "x_bin": 6,
+      "y_bin": 5,
+      "events": 2
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 0,
+      "events": 26
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 1,
+      "events": 8
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 2,
+      "events": 1
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 3,
+      "events": 1
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 4,
+      "events": 4
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 5,
+      "events": 7
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 6,
+      "events": 4
+    },
+    {
+      "x_bin": 7,
+      "y_bin": 7,
+      "events": 2
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 0,
+      "events": 12
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 1,
+      "events": 12
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 2,
+      "events": 2
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 3,
+      "events": 4
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 4,
+      "events": 3
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 5,
+      "events": 4
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 6,
+      "events": 1
+    },
+    {
+      "x_bin": 8,
+      "y_bin": 7,
+      "events": 2
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 0,
+      "events": 18
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 1,
+      "events": 24
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 2,
+      "events": 8
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 3,
+      "events": 8
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 4,
+      "events": 6
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 5,
+      "events": 3
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 6,
+      "events": 3
+    },
+    {
+      "x_bin": 9,
+      "y_bin": 7,
+      "events": 2
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 0,
+      "events": 7
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 1,
+      "events": 10
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 2,
+      "events": 8
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 3,
+      "events": 4
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 5,
+      "events": 2
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 6,
+      "events": 7
+    },
+    {
+      "x_bin": 10,
+      "y_bin": 7,
+      "events": 2
+    },
+    {
+      "x_bin": 11,
+      "y_bin": 0,
+      "events": 8
+    },
+    {
+      "x_bin": 11,
+      "y_bin": 1,
+      "events": 1
+    },
+    {
+      "x_bin": 11,
+      "y_bin": 2,
+      "events": 10
+    },
+    {
+      "x_bin": 11,
+      "y_bin": 5,
+      "events": 1
+    },
+    {
+      "x_bin": 11,
+      "y_bin": 7,
+      "events": 2
+    }
+  ],
+  "grid_columns": 12,
+  "grid_rows": 8
+}

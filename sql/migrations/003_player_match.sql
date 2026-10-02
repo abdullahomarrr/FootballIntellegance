@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS fact_player_match (
+    player_match_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    player_id bigint NOT NULL REFERENCES dim_player(player_id),
+    match_id bigint NOT NULL REFERENCES dim_match(match_id),
+    team_id bigint NOT NULL REFERENCES dim_team(team_id),
+    competition_id bigint NOT NULL REFERENCES dim_competition(competition_id),
+    season_id bigint NOT NULL REFERENCES dim_season(season_id),
+    started boolean,
+    minutes smallint CHECK (minutes BETWEEN 0 AND 130),
+    position text,
+    goals smallint,
+    assists smallint,
+    shots smallint,
+    shots_on_target smallint,
+    passes smallint,
+    key_passes smallint,
+    tackles smallint,
+    interceptions smallint,
+    provider text NOT NULL,
+    data_as_of timestamptz NOT NULL,
+    UNIQUE (player_id, match_id, team_id, provider)
+);

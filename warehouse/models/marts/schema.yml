@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: mart_player_season_profile
+    description: One player-team-competition-season profile derived from player-match facts.
+    columns:
+      - name: player_id
+        data_tests: [not_null]
+      - name: competition_id
+        data_tests: [not_null]
+      - name: season_id
+        data_tests: [not_null]
+      - name: minutes_played
+        data_tests: [not_null]
+      - name: sample_confidence
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['LOW', 'LIMITED', 'STANDARD']
+  - name: mart_provider_player_match_event_profile
+    description: Provider-identity match profile. It must not be presented as a resolved canonical player.
+    columns:
+      - name: provider
+        data_tests: [not_null]
+      - name: provider_match_id
+        data_tests: [not_null]
+      - name: provider_player_id
+        data_tests: [not_null]
+      - name: identity_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['PROVIDER_UNRESOLVED', 'CANONICAL_SINGLE_PROVIDER']
+  - name: mart_player_metric_percentile
+    description: Long-form metrics ranked within competition, season, and broad provider position for players with at least 900 minutes.
+    columns:
+      - name: player_id
+        data_tests: [not_null]
+      - name: metric_name
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['goals_per_90', 'assists_per_90', 'shots_per_90', 'shots_on_target_per_90', 'passes_per_90', 'key_passes_per_90', 'tackles_per_90', 'interceptions_per_90']
+      - name: percentile
+        data_tests: [not_null]
+      - name: feature_set_version
+        data_tests: [not_null]
+  - name: mart_data_freshness
+    description: Publication metadata that distinguishes unavailable data from a zero-row success.
+    columns:
+      - name: relation_name
+        data_tests: [not_null, unique]
+      - name: freshness_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['AVAILABLE', 'NO_DATA']
+  - name: mart_player_season_intelligence
+    description: Coverage-aware advanced event features for one player-team-competition-season sample.
+    columns:
+      - name: player_id
+        data_tests: [not_null]
+      - name: minutes_played
+        data_tests: [not_null]
+      - name: feature_set_version
+        data_tests: [not_null]
+  - name: mart_player_intelligence_metric_percentile
+    description: Position-specific advanced metrics; goalkeeper-only metrics never share an outfield comparison population.
+    columns:
+      - name: player_id
+        data_tests: [not_null]
+      - name: metric_name
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['pass_completion_pct', 'pressured_pass_completion_pct', 'progressive_passes_per_90', 'passes_into_final_third_per_90', 'box_entries_per_90', 'progressive_carries_per_90', 'successful_dribbles_per_90', 'pressures_per_90', 'recoveries_per_90', 'defensive_actions_per_90', 'defensive_duels_per_90', 'turnovers_per_90', 'xt_added_per_90', 'xg_per_90', 'average_shot_xg', 'goalkeeper_saves_per_90', 'goalkeeper_save_pct', 'goalkeeper_distribution_pct', 'goalkeeper_long_pass_pct', 'goals_conceded_per_90', 'claims_and_punches_per_90', 'sweeper_actions_per_90']
+      - name: percentile
+        data_tests: [not_null]
+      - name: feature_set_version
+        data_tests: [not_null]
