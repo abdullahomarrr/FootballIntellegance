@@ -70,6 +70,8 @@ class Pool:
 
 _pool: Pool | None = None
 _pool_signature: tuple[object, ...] = (0, 0.0)
+_database_entries: dict[int, Entry] = {}
+_database_loaded_at = 0.0
 
 
 def family_of(profile: dict[str, Any]) -> str:
@@ -117,6 +119,10 @@ def build_pool(profiles: list[dict[str, Any]]) -> Pool:
         entry = entry_from_profile(profile)
         if entry is not None:
             entries[entry.player_id] = entry
+    return pool_from_entries(entries)
+
+
+def pool_from_entries(entries: dict[int, Entry]) -> Pool:
     sorted_values: dict[tuple[str, str], list[float]] = {}
     for entry in entries.values():
         if entry.minutes < MIN_MINUTES:
@@ -136,37 +142,86 @@ def load_pool() -> Pool:
 
     The fotmob_player_profile table is the base, so a host whose disk cache only holds the few
     pages viewed since it started still compares against every player. Disk pages override the
-    stored copy of the same player. Rebuilt when the disk cache changes or after an hour.
+    stored copy of the same player. Stored profiles are re-read at most once an hour; a newly
+    cached page only re-reads the disk overlay, so clicking through players stays cheap.
     """
-    global _pool, _pool_signature
+    global _pool, _pool_signature, _database_entries, _database_loaded_at
     directory = fotmob.CACHE_DIRECTORY / "players"
     files = sorted(directory.glob("*.json")) if directory.is_dir() else []
     signature = (len(files), max((f.stat().st_mtime for f in files), default=0.0))
-    stale = _pool is None or time.time() - _pool.built_at > DATABASE_POOL_SECONDS
-    if stale or signature != _pool_signature:
-        profiles: dict[Any, dict[str, Any]] = {}
-        for profile in _profiles_from_database():
-            profiles[profile.get("player_id")] = profile
+    database_stale = time.time() - _database_loaded_at > DATABASE_POOL_SECONDS
+    if _pool is None or database_stale or signature != _pool_signature:
+        if _pool is None or database_stale:
+            _database_entries = _entries_from_database()
+            _database_loaded_at = time.time()
+        entries = dict(_database_entries)
         for path in files:
             try:
                 profile = json.loads(path.read_text(encoding="utf-8"))
             except (OSError, ValueError):
                 continue
-            profiles[profile.get("player_id", path.stem)] = profile
-        _pool = build_pool(list(profiles.values()))
+            entry = entry_from_profile(profile)
+            if entry is not None:
+                entries[entry.player_id] = entry
+        _pool = pool_from_entries(entries)
         _pool_signature = signature
     assert _pool is not None
     return _pool
 
 
-def _profiles_from_database() -> list[dict[str, Any]]:
-    from football_intelligence.repository import _query_all
+# Only the fields entry_from_profile reads, so full pages (heat maps, shot maps, value
+# histories) never reach Python. A 512 MB host cannot hold every full profile at once.
+SLIM_PROFILE_SQL = """
+SELECT jsonb_build_object(
+    'player_id', payload->'player_id',
+    'name', payload->'name',
+    'team', payload->'team',
+    'traits', jsonb_build_object('key', payload->'traits'->'key'),
+    'league', jsonb_build_object(
+        'stats', jsonb_build_object('Minutes played', payload->'league'->'stats'->'Minutes played')
+    ),
+    'stats', (
+        SELECT coalesce(jsonb_agg(jsonb_build_object(
+            'key', stat->'key', 'per90', stat->'per90', 'title', stat->'title'
+        )), '[]'::jsonb)
+        FROM jsonb_array_elements(
+            CASE WHEN jsonb_typeof(payload->'stats') = 'array' THEN payload->'stats'
+                 ELSE '[]'::jsonb END
+        ) AS stat
+    ),
+    'positions', payload->'positions',
+    'market_values', CASE
+        WHEN jsonb_typeof(payload->'market_values') = 'array'
+             AND jsonb_array_length(payload->'market_values') > 0
+        THEN jsonb_build_array(payload->'market_values'->-1)
+        ELSE '[]'::jsonb
+    END
+) AS profile
+FROM fotmob_player_profile
+"""
 
+
+def _entries_from_database() -> dict[int, Entry]:
+    """Stream slim profiles in batches and keep only the compact entries."""
+    import psycopg
+
+    from football_intelligence.repository import database_url
+
+    entries: dict[int, Entry] = {}
     try:
-        rows = _query_all("SELECT payload FROM fotmob_player_profile", ())
+        with (
+            psycopg.connect(database_url()) as connection,
+            connection.cursor(name="alternatives_pool") as cursor,
+        ):
+            cursor.itersize = 200
+            cursor.execute(SLIM_PROFILE_SQL)
+            for (profile,) in cursor:
+                entry = entry_from_profile(profile)
+                if entry is not None:
+                    entries[entry.player_id] = entry
     except Exception:  # table missing or database unreachable: an empty pool, not a crash
-        return []
-    return [row["payload"] for row in rows]
+        return {}
+    return entries
 
 
 def percentile(pool: Pool, family: str, key: str, value: float) -> float | None:

@@ -347,7 +347,7 @@ def test_lower_is_better_stats_are_inverted():
 def test_load_pool_reads_the_cache_directory(tmp_path, monkeypatch):
     monkeypatch.setattr(fotmob, "CACHE_DIRECTORY", tmp_path)
     monkeypatch.setattr(alternatives, "_pool", None)
-    monkeypatch.setattr(alternatives, "_profiles_from_database", lambda: [])
+    monkeypatch.setattr(alternatives, "_entries_from_database", lambda: {})
     (tmp_path / "players").mkdir()
     (tmp_path / "players" / "1.json").write_text(json.dumps(profile(1, "Cached", 1.0)))
     (tmp_path / "players" / "bad.json").write_text("{not json")
@@ -360,12 +360,37 @@ def test_load_pool_merges_stored_profiles_with_fresher_disk_pages(tmp_path, monk
     monkeypatch.setattr(fotmob, "CACHE_DIRECTORY", tmp_path)
     monkeypatch.setattr(alternatives, "_pool", None)
     stored = [profile(1, "Stored", 1.0), profile(2, "Only stored", 1.0)]
-    monkeypatch.setattr(alternatives, "_profiles_from_database", lambda: stored)
+    monkeypatch.setattr(
+        alternatives,
+        "_entries_from_database",
+        lambda: {e.player_id: e for e in map(alternatives.entry_from_profile, stored) if e},
+    )
     (tmp_path / "players").mkdir()
     (tmp_path / "players" / "1.json").write_text(json.dumps(profile(1, "Fresh", 1.0)))
     pool = alternatives.load_pool()
     assert sorted(pool.entries) == [1, 2]
     assert pool.entries[1].name == "Fresh"
+    monkeypatch.setattr(alternatives, "_pool", None)
+
+
+def test_newly_cached_page_does_not_reload_stored_profiles(tmp_path, monkeypatch):
+    monkeypatch.setattr(fotmob, "CACHE_DIRECTORY", tmp_path)
+    monkeypatch.setattr(alternatives, "_pool", None)
+    calls = []
+
+    def stored():
+        calls.append(1)
+        entry = alternatives.entry_from_profile(profile(2, "Stored", 1.0))
+        assert entry is not None
+        return {2: entry}
+
+    monkeypatch.setattr(alternatives, "_entries_from_database", stored)
+    (tmp_path / "players").mkdir()
+    alternatives.load_pool()
+    (tmp_path / "players" / "1.json").write_text(json.dumps(profile(1, "New click", 1.0)))
+    pool = alternatives.load_pool()
+    assert sorted(pool.entries) == [1, 2]
+    assert len(calls) == 1
     monkeypatch.setattr(alternatives, "_pool", None)
 
 

@@ -6,6 +6,8 @@ COPY src ./src
 COPY data/coverage ./data/coverage
 RUN uv sync --frozen --no-dev --group postgres
 ENV PATH="/app/.venv/bin:$PATH"
+# Fewer glibc malloc arenas: less fragmentation on the 512 MB free host.
+ENV MALLOC_ARENA_MAX=2
 EXPOSE 8000
 # Hosts such as Render inject PORT; fall back to 8000 locally.
 CMD ["sh", "-c", "uvicorn football_intelligence.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
